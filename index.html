@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>ROBERTO-TELEFLIX</title>
+  <title>GUI-TELEFLIX</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>ROBERTO-TELEFLIX</h1>
+    <h1>GUI-TELFLIX</h1>
   </header>
 
   <!-- LAYOUT: MENU LATERAL (ESQ) + VÍDEO (DIR) -->
@@ -19,10 +18,10 @@
       <section style="padding:12px 0;">
         <label for="tema" style="color:#BDC3C7; margin-right:8px;">ESCOLHA O TEMA:</label>
         <select id="tema">
-          <option value="LOUVOR">LOUVOR</option>
-          <option value="MENSAGENS">MENSAGENS</option>
-          <option value="INFANTIL">INFANTIL</option>
+          <option value="GAMES">GAMES</option>
+          <option value="ANIMAÇÃO">ANIMAÇÃO</option>
           <option value="AULAS">AULAS</option>
+          <option value="MÚSICAS">MÚSICAS</option>
         </select>
       </section>
 
@@ -38,11 +37,11 @@
 </h1>
       <nav class="nav-vertical" aria-label="Vídeos fixos">
         <ul>
-          <li><a href="https://youtu.be/cgEnBkmcpuQ?si=paA3pkAIp3lgAmjQ" target="_blank">CantaJuego - Soy Una Taza (Version Mexico)</a></li>
-          <li><a href="https://youtu.be/zWW6PUom-8o?si=IdhsyI372HIguMJY" target="_blank">Morar no Sertão - Nem Que A Vaca Tussa</a></li>
-          <li><a href="https://youtu.be/RSXJEkzws2o?si=krxwF-8-ZuPxLo8K" target="_blank">Eu me remecho muito - Madagascar</a></li>
-          <li><a href="https://youtu.be/orxxp-3gBiE?si=oViIQTT_iWpsrC8l" target="_blank">Mariana - Galinha Pintadinha</a></li>
-          <li><a href="https://youtu.be/Tdwy3BZe61s?si=As38T49IC695wKE0" target="_blank">Pedro, Tiago, João no barquinho - 3 Palavrinhas</a></li>
+          <li><a href="https://www.youtube.com/watch?v=1SI0vD2ZfOs" target="_blank">Build Modern Bamboo Villa Surrounding by Swimming Pool Bamboo Bridge [Full Video] - Jungle Survival</a></li>
+          <li><a href="https://www.youtube.com/watch?v=c4kqTCQF70k" target="_blank">UMA LENDA CHAMADA PINTO - Super Saladin</a></li>
+          <li><a href="https://www.youtube.com/watch?v=6toKSpuvQ3s" target="_blank">As pessoas mais procuradas da história - World Data 3D</a></li>
+          <li><a href="https://www.youtube.com/watch?v=aPO5JaShu2U" target="_blank">Sinking Lego Ships - Brick Technology</a></li>
+          <li><a href="https://www.youtube.com/watch?v=i2RWizcJo64" target="_blank">HYDRAULIC PRESS VS VERY STRONG MATERIALS - Crazy Hydraulic Press</a></li>
         </ul>
       </nav>
     </aside>
@@ -72,48 +71,48 @@
   <script>
     // Mapa de temas → lista de vídeos
     const TEMAS = {
-      LOUVOR: [
-        { titulo: "EU SOU TEU PAI", 
-         autor: "VALESCA MAYSSA", 
-         url: "https://www.youtube.com/watch?v=kNJPalON82E" 
+      GAMES: [
+        { titulo: "DONA FEZ HISTÓRIA COM ESSE DECK NO CLASH ROYALE!", 
+         autor: "Isaac Clips", 
+         url: "https://www.youtube.com/watch?v=uQsYRSMlixs" 
         },
-        { titulo: "DEUS DE PROMESSAS", 
-         autor: "MINISTÉRIO APASCENTAR", 
-         url: "https://youtu.be/93XkdakMp00?si=-S0mta76Kc_GxWhd" 
+        { titulo: "PASSEI A MAIOR RAIVA! - Yagostoso jogando Level Devil #1", 
+         autor: "Yagostoso", 
+         url: "https://www.youtube.com/watch?v=d3KSClx9YJY" 
         },
-        { titulo: "NINGUÉM EXPLICA DEUS", 
-         autor: "PRETO NO BRANCO", 
-         url: "https://youtu.be/LYsaKn8FRhc?si=R7yN3htfuafehfSw" 
-        },
-      ],
-      MENSAGENS: [
-        { titulo: "O TEMPO É CURTO; FAÇA O MELHOR USO DO SEU TEMPO", 
-         autor: "BILLY GRAHAM EM PORTUGUÊS", 
-         url: "https://youtu.be/fmsAqGy2pCM?si=u8aCy5Lwjoj80xAB" 
-        },
-        { titulo: "QUEM É JESUS CRISTO?", 
-         autor: "BILLY GRAHAM EM PORTUGUÊS", 
-         url: "https://youtu.be/6ATJ6avomUg?si=4_qlxZGejDlxVyz5" 
+        { titulo: "Quebrando todo o CORPO com MANOBRA MAIS DIFÍCIL Do SKATE 4", 
+         autor: "Bitgamer", 
+         url: "https://www.youtube.com/watch?v=3dAY0wFo3N4" 
         },
       ],
-      INFANTIL: [
-        { titulo: "SOY UNA TAZA", 
-         autor: "CANTA JUEGO", 
-         url: "https://youtu.be/cgEnBkmcpuQ?si=paA3pkAIp3lgAmjQ" 
+      ANIMAÇÃO: [
+        { titulo: "Animation vs. Minecraft (original)", 
+         autor: "Alan Becker", 
+         url: "https://www.youtube.com/watch?v=GW_fdXHOWp4" 
         },
-        { titulo: "PEDRO, THIAGO, JOÃO NO BARQUINHO", 
-         autor: "3 PALAVRINHAS", 
-         url: "https://youtu.be/Tdwy3BZe61s?si=As38T49IC695wKE0" 
+        { titulo: "The Ultimate "Kung Fu Panda" Recap Cartoon", 
+         autor: "Cas van de Pol", 
+         url: "https://www.youtube.com/watch?v=8y9QnS_tMkY" 
         },
       ],
       AULAS: [
-        { titulo: "INTRODUÇÃO A JAVASCRIPT", 
-         autor: "TIGER CODES", 
-         url: "https://youtu.be/WRlfwBof66s?si=0o80ULtCNqjj-lU2" 
+        { titulo: "Corpo Humano - suas divisões básicas", 
+         autor: "O Incrível Pontinho Azul", 
+         url: "https://www.youtube.com/watch?v=DBySAPxEMIc" 
         },
-        { titulo: "HTML E CSS BÁSICO EM 5 MINUTOS", 
-         autor: "TIGER CODES", 
-         url: "https://www.youtube.com/watch?v=5Hn58p-hYC0" 
+        { titulo: "O MAIOR DESASTRE RADIOATIVO DA HISTÓRIA DO BRASIL - Nostalgia Animado", 
+         autor: "Canal Nostalgia", 
+         url: "https://www.youtube.com/watch?v=UrtenQ77lUA" 
+        },
+      ],
+      MÚSICAS: [
+        { titulo: "Eu Sou 157", 
+         autor: "Racionais TV", 
+         url: "https://www.youtube.com/watch?v=bDAHu_s_0oE&list=RDbDAHu_s_0oE&start_radio=1" 
+        },
+        { titulo: "Natiruts - Sorri, Sou Rei (Natiruts Acústico Ao Vivo no Rio de Janeiro)", 
+         autor: "Natiruts", 
+         url: "https://www.youtube.com/watch?v=tRmtL8yxcSA&list=RDtRmtL8yxcSA&start_radio=1" 
         },
       ],
     };
